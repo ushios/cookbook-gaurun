@@ -25,15 +25,15 @@ default["gaurun"]["config"] = {
         "push_uri" => "/push",
         "stat_go_uri" => "/stat/go",
         "stat_app_uri" => "/stat/app",
-        "config_app_url" => "/config/app"
+        "config_app_uri" => "/config/app",
     },
     "android" => {
         "apikey" => "",
         "enabled" => "true",
         "timeout" => 5, # sec
         "retry_max" => 0,
-    }
-    ,"ios" => {
+    },
+    "ios" => {
         "pem_cert_path" => "cert.pem",
         "pem_key_path" => "key.pem",
         "sandbox" => "true",

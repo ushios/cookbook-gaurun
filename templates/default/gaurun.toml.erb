@@ -2,7 +2,7 @@
 port = "<%=@core['port']%>"
 workers = <%=@core['workers']%>
 queues = <%=@core['queues']%>
-notification_max = <%=@core['nortification_max']%>
+notification_max = <%=@core['notification_max']%>
 
 [api]
 push_uri = "<%=@api['push_uri']%>"
@@ -11,10 +11,10 @@ stat_app_uri = "<%=@api['stat_app_uri']%>"
 config_app_uri = "<%=@api['config_app_uri']%>"
 
 [android]
-apikey = "<%=@anroid['apikey']%>"
-enabled = <%=@anroid['enabled']%>
-timeout = <%=@anroid['timeout']%> # sec
-retry_max = <%=@anroid['retry_max']%>
+apikey = "<%=@android['apikey']%>"
+enabled = <%=@android['enabled']%>
+timeout = <%=@android['timeout']%> # sec
+retry_max = <%=@android['retry_max']%>
 
 [ios]
 pem_cert_path = "<%=@ios['pem_cert_path']%>"
@@ -27,6 +27,6 @@ retry_max = <%=@ios['retry_max']%>
 timeout_error = <%=@ios['timeout_error']%> # msec
 
 [log]
-access_log = "<%=@lgo['access_log']%>"
-error_log = "<%=@lgo['error_log']%>"
-level = "<%=@lgo['level']%>"
+access_log = "<%=@log['access_log']%>"
+error_log = "<%=@log['error_log']%>"
+level = "<%=@log['level']%>"
