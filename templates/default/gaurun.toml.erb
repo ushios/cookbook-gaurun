@@ -1,32 +1,32 @@
 [core]
-port = "80"
-workers = 8
-queues = 8192
-notification_max = 100
+port = "<%=@core['port']%>"
+workers = <%=@core['workers']%>
+queues = <%=@core['queues']%>
+notification_max = <%=@core['nortification_max']%>
 
 [api]
-push_uri = "/push"
-stat_go_uri = "/stat/go"
-stat_app_uri = "/stat/app"
-config_app_uri = "/config/app"
+push_uri = "<%=@api['push_uri']%>"
+stat_go_uri = "<%=@api['stat_go_uri']%>"
+stat_app_uri = "<%=@api['stat_app_uri']%>"
+config_app_uri = "<%=@api['config_app_uri']%>"
 
 [android]
-apikey = "apikey for GCM"
-enabled = true
-timeout = 5 # sec
-retry_max = 0
+apikey = "<%=@anroid['apikey']%>"
+enabled = <%=@anroid['enabled']%>
+timeout = <%=@anroid['timeout']%> # sec
+retry_max = <%=@anroid['retry_max']%>
 
 [ios]
-pem_cert_path = "cert.pem"
-pem_key_path = "key.pem"
-sandbox = true
-enabled = true
-keepalive_max = 0
-keepalive_idle_timeout = 300
-retry_max = 1
-timeout_error = 500 # msec
+pem_cert_path = "<%=@ios['pem_cert_path']%>"
+pem_key_path = "<%=@ios['pem_key_path']%>"
+sandbox = <%=@ios['sandbox']%>
+enabled = <%=@ios['enabled']%>
+keepalive_max = <%=@ios['keepalive_max']%>
+keepalive_idle_timeout = <%=@ios['keepalive_idle_timeout']%>
+retry_max = <%=@ios['retry_max']%>
+timeout_error = <%=@ios['timeout_error']%> # msec
 
 [log]
-access_log = "stdout"
-error_log = "stderr"
-level = "error"
+access_log = "<%=@lgo['access_log']%>"
+error_log = "<%=@lgo['error_log']%>"
+level = "<%=@lgo['level']%>"
