@@ -1,0 +1,32 @@
+[core]
+port = "80"
+workers = 8
+queues = 8192
+notification_max = 100
+
+[api]
+push_uri = "/push"
+stat_go_uri = "/stat/go"
+stat_app_uri = "/stat/app"
+config_app_uri = "/config/app"
+
+[android]
+apikey = "apikey for GCM"
+enabled = true
+timeout = 5 # sec
+retry_max = 0
+
+[ios]
+pem_cert_path = "cert.pem"
+pem_key_path = "key.pem"
+sandbox = true
+enabled = true
+keepalive_max = 0
+keepalive_idle_timeout = 300
+retry_max = 1
+timeout_error = 500 # msec
+
+[log]
+access_log = "stdout"
+error_log = "stderr"
+level = "error"
